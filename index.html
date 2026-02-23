@@ -19,10 +19,10 @@
 <body class="bg-white text-gray-900">
   <!-- Navigation Menu -->
   <nav class="w-full bg-[#2E3440]/95 backdrop-blur-md text-white py-4 shadow-md sticky top-0 z-50">
-  <div class="max-w-5xl mx-auto flex items-center justify-between px-4">
+  <div class="max-w-5xl mx-auto relative px-4">
 
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex gap-8 text-lg font-semibold items-center">
+    <!-- Desktop Menu (Centered) -->
+    <ul class="hidden md:flex gap-8 text-lg font-semibold justify-center items-center">
       <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
       <li><a href="#menu" class="hover:text-yellow-400 transition">Menu</a></li>
       <li><a href="#gallery" class="hover:text-yellow-400 transition">Gallery</a></li>
@@ -32,8 +32,8 @@
       <li><a href="https://www.facebook.com/profile.php?id=61567479093762" target="_blank" class="hover:text-yellow-400 transition">Facebook</a></li>
     </ul>
 
-    <!-- Hamburger Button (Mobile Only) -->
-    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+    <!-- Hamburger (Mobile Only) -->
+    <button id="menu-btn" class="md:hidden absolute right-4 top-1/2 -translate-y-1/2 text-3xl focus:outline-none">
       ☰
     </button>
   </div>
@@ -133,6 +133,7 @@
   </footer>
   <script src="js/main.js"></script>
 </html>
+
 
 
 

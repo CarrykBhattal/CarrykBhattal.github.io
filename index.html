@@ -19,18 +19,38 @@
 <body class="bg-white text-gray-900">
   <!-- Navigation Menu -->
   <nav class="w-full bg-[#2E3440]/95 backdrop-blur-md text-white py-4 shadow-md sticky top-0 z-50">
-    <div class="max-w-5xl mx-auto flex justify-center items-center px-4">
-      <ul class="flex flex-wrap gap-4 md:gap-8 text-base md:text-lg font-semibold justify-center w-full">
-        <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
-        <li><a href="#menu" class="hover:text-yellow-400 transition">Menu</a></li>
-        <li><a href="#gallery" class="hover:text-yellow-400 transition">Gallery</a></li>
-        <li><a href="#about" class="hover:text-yellow-400 transition">About</a></li>
-  <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
-  <li><a href="https://www.google.com/maps/dir/?api=1&destination=19321+James+Madison+Hwy+Ste+15+Troy+VA+22974" target="_blank" class="hover:text-yellow-400 transition">Directions</a></li>
-  <li><a href="https://www.facebook.com/profile.php?id=61567479093762" target="_blank" class="hover:text-yellow-400 transition">Facebook</a></li>
-      </ul>
-    </div>
-  </nav>
+  <div class="max-w-5xl mx-auto flex items-center justify-between px-4">
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-8 text-lg font-semibold items-center">
+      <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+      <li><a href="#menu" class="hover:text-yellow-400 transition">Menu</a></li>
+      <li><a href="#gallery" class="hover:text-yellow-400 transition">Gallery</a></li>
+      <li><a href="#about" class="hover:text-yellow-400 transition">About</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
+      <li><a href="https://www.google.com/maps/dir/?api=1&destination=19321+James+Madison+Hwy+Ste+15+Troy+VA+22974" target="_blank" class="hover:text-yellow-400 transition">Directions</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61567479093762" target="_blank" class="hover:text-yellow-400 transition">Facebook</a></li>
+    </ul>
+
+    <!-- Hamburger Button (Mobile Only) -->
+    <button id="menu-btn" class="md:hidden text-3xl focus:outline-none">
+      ☰
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden bg-[#2E3440]/95 backdrop-blur-md px-6 pb-6">
+    <ul class="flex flex-col gap-4 text-lg font-semibold mt-4">
+      <li><a href="#" class="hover:text-yellow-400 transition">Home</a></li>
+      <li><a href="#menu" class="hover:text-yellow-400 transition">Menu</a></li>
+      <li><a href="#gallery" class="hover:text-yellow-400 transition">Gallery</a></li>
+      <li><a href="#about" class="hover:text-yellow-400 transition">About</a></li>
+      <li><a href="#contact" class="hover:text-yellow-400 transition">Contact</a></li>
+      <li><a href="https://www.google.com/maps/dir/?api=1&destination=19321+James+Madison+Hwy+Ste+15+Troy+VA+22974" target="_blank" class="hover:text-yellow-400 transition">Directions</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61567479093762" target="_blank" class="hover:text-yellow-400 transition">Facebook</a></li>
+    </ul>
+  </div>
+</nav>
   <header class="relative min-h-[24rem] flex flex-col items-center justify-center" style="background-color: #3B4252;">
     <div class="relative z-10 text-center text-white flex flex-col items-center w-full pt-12">
   <img src="images/logo.png" alt="Royals of Troy Logo" class="w-80 h-80 object-contain mb-2 drop-shadow-lg rounded-full border-4 border-yellow-400 bg-white bg-opacity-80">
@@ -113,5 +133,6 @@
   </footer>
   <script src="js/main.js"></script>
 </html>
+
 
 

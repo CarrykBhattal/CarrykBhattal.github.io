@@ -164,19 +164,20 @@ lightboxNext.addEventListener('click', showNext);
 lightboxModal.addEventListener('click', (e) => {
   if (e.target === lightboxModal) closeLightbox();
 });
-document.addEventListener("DOMContentLoaded", function () {
-  const menuBtn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
 
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+if (menuBtn && mobileMenu) {
   menuBtn.addEventListener("click", function () {
     mobileMenu.classList.toggle("hidden");
   });
 
-  // Close menu after clicking a link
   const mobileLinks = mobileMenu.querySelectorAll("a");
   mobileLinks.forEach(link => {
     link.addEventListener("click", () => {
       mobileMenu.classList.add("hidden");
     });
   });
-});
+}
+
